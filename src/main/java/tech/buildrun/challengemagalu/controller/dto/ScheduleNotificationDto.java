@@ -13,7 +13,7 @@ public record ScheduleNotificationDto(LocalDateTime dateTime,
 
     public Notification toNotification() {
         return new Notification(
-            dateTime,
+                dateTime,
                 destination,
                 message,
                 channel.toChannel(),
